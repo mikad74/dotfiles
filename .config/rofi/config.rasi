@@ -1,12 +1,12 @@
 configuration {
-	modi: "window,run,ssh, drun";
-/*	font: "mono 12";*/
-/*	location: 0;*/
-/*	yoffset: 0;*/
+	modi: "window,run,ssh,drun";
+	font: "UbuntuMono Nerd Font 16";
+	location: 0;
+	yoffset: -160;
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-/*	show-icons: false;*/
-/*	terminal: "rofi-sensible-terminal";*/
+	show-icons: true;
+	terminal: "kitty";
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
@@ -26,9 +26,9 @@ configuration {
 /*	sorting-method: "normal";*/
 /*	case-sensitive: false;*/
 /*	cycle: true;*/
-/*	sidebar-mode: false;*/
+	sidebar-mode: false;
 /*	hover-select: false;*/
-/*	eh: 1;*/
+	eh: 1;
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
@@ -74,9 +74,9 @@ configuration {
 /*	kb-remove-word-forward: "Control+Alt+d";*/
 /*	kb-remove-char-forward: "Delete,Control+d";*/
 /*	kb-remove-char-back: "BackSpace,Shift+BackSpace,Control+h";*/
-/*	kb-remove-to-eol: "Control+k";*/
+	kb-remove-to-eol: "";
 /*	kb-remove-to-sol: "Control+u";*/
-/*	kb-accept-entry: "Control+j,Control+m,Return,KP_Enter";*/
+	kb-accept-entry: "Control+o,Control+m,Return,KP_Enter";
 /*	kb-accept-custom: "Control+Return";*/
 /*	kb-accept-custom-alt: "Control+Shift+Return";*/
 /*	kb-accept-alt: "Shift+Return";*/
@@ -86,8 +86,8 @@ configuration {
 /*	kb-mode-complete: "Control+l";*/
 /*	kb-row-left: "Control+Page_Up";*/
 /*	kb-row-right: "Control+Page_Down";*/
-/*	kb-row-up: "Up,Control+p,ISO_Left_Tab";*/
-/*	kb-row-down: "Down,Control+n";*/
+	kb-row-up: "Up,Control+k";
+	kb-row-down: "Down,Control+j";
 /*	kb-row-tab: "Tab";*/
 /*	kb-page-prev: "Page_Up";*/
 /*	kb-page-next: "Page_Down";*/
@@ -144,3 +144,73 @@ configuration {
       sorting-method:    "name";
   }
 }
+
+window {
+		background-color: #d9b28a;
+		border: false;
+		width: 25%;
+		children: [ listview, inputbar ];
+}
+
+listview {
+		scrollbar: false;
+		lines: 7;
+		border: false;
+		border-radius: 8;
+		background-color: #f6f3d0;
+}
+
+
+element {
+		orientation: horizontal;
+		children: [ element-icon, element-text ];
+		border: 2 ;
+		border-radius: 16;
+		border-color: #f6f3d0;
+		spacing: 0;
+		margin: 5;
+		background-color: #f6f3d0;
+}
+
+element selected{
+		border: 3;
+		background-color: #3e4837;
+		border-color: #3e4837;
+}
+
+element-text {
+		text-color: #200e09;
+		background-color: #d9b28a;
+		padding: 9;
+		vertical-align: 0.5;
+}
+
+element-icon {
+		background-color: #d9b28a;
+		padding:9 ;
+		size: 40;
+}
+
+element-text selected { 
+		background-color: #3e4837;
+		text-color: #f6f3d0;
+}
+
+inputbar {
+		children: [ entry ];
+		padding: 9;
+}
+
+
+entry{
+		placeholder: "";
+		background-color: #f6f3d0;
+		border-radius: 8;
+		padding: 5;
+		text-color: #200e09;
+		horizontal-align: 0.5;
+}
+
+
+
+
