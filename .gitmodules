@@ -1,0 +1,3 @@
+[submodule ".config/awesome"]
+	path = .config/awesome
+	url = git@github.com:mikad74/awesome_dotfiles.git
