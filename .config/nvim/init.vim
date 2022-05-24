@@ -87,7 +87,7 @@ let g:floaterm_height = 0.8
 
 function RunPyfile()
 		let path = expand("%")
-		execute ':FloatermNew! time ' . path
+		execute ':FloatermNew! time ./' . path
 endfunction
 
 
