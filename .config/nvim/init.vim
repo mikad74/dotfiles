@@ -6,11 +6,12 @@ call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'lervag/vimtex'
 Plug 'lambdalisue/suda.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sirver/ultisnips'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', {'do': { -> fzf#install()} }
 Plug 'junegunn/fzf.vim'
+Plug 'Fymyte/rasi.vim'
 call plug#end()
 
 colo yak
@@ -32,7 +33,10 @@ nnoremap <C-W> :w<CR>
 nnoremap <C-M-W> :SudaWrite<CR>
 nnoremap <M-f> :Files<CR>
 autocmd FileType rust nnoremap <M-r> :FloatermNew! cargo run <CR>
-autocmd FileType python nnoremap <M-r> :FloatermNew! time ./run<CR>
+autocmd FileType python nnoremap <M-r> :call RunPyfile()<CR>
+
+
+
 
 
 
@@ -81,6 +85,10 @@ let g:floaterm_width = 0.8
 let g:floaterm_height = 0.8
 
 
+function RunPyfile()
+		let path = expand("%")
+		execute ':FloatermNew! time ' . path
+endfunction
 
 
 
