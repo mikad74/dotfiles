@@ -1,0 +1,40 @@
+local opts = { noremap = true, silent = true }
+
+local term_opts = { silent = true }
+
+local k = vim.api.nvim_set_keymap
+
+-- Leader Key
+k("", "<Space>", "<Nop>", opts)
+k("", "<bs>", "<Nop>", opts)
+k("", "<CR>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- Normal Mode --
+-- Window Navigation
+k("n", "<C-h>", "<C-w>h", opts)
+k("n", "<C-j>", "<C-w>j", opts)
+k("n", "<C-k>", "<C-w>k", opts)
+k("n", "<C-l>", "<C-w>l", opts)
+
+-- Lexplore
+k("n", "<C-t>", ":Lexplore<CR>", opts)
+
+-- Quick exit
+k("n", "<C-q>", ":q<CR>", opts)
+
+-- Tab movement
+k("n", "<S-k>", ":tabn<CR>", opts)
+k("n", "<S-j>", ":tabp<CR>", opts)
+
+-- Visual --
+k("v", "<", "<gv", opts)
+k("v", ">", ">gv", opts)
+
+-- Telescope 
+k("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
+k("n", "<leader>d", "<cmd>Telescope live_grep<CR>", opts)
+
+-- Colorscheme management
+k("n", "<leader>z", "<cmd>TSHighlightCapturesUnderCursor<CR>", opts)
