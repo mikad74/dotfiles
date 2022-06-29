@@ -79,7 +79,7 @@ esac
 
 
 # source ~/Downloads/zshPlugins/autoenv.plugin.zsh
- source ~/Downloads/zshPlugins/colored-man-pages.plugin.zsh
+source ~/Downloads/zshPlugins/colored-man-pages.plugin.zsh
 
 
 
