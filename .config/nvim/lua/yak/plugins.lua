@@ -60,11 +60,11 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
 
-    -- Telescope 
+    -- Telescope
     use "nvim-telescope/telescope.nvim"
     use "nvim-telescope/telescope-media-files.nvim"
 
-    -- Treesitter 
+    -- Treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate"
@@ -75,7 +75,17 @@ return packer.startup(function(use)
     -- colorizer
     use "norcalli/nvim-colorizer.lua"
 
-    -- Neorg 
+    -- autopairs
+    use "windwp/nvim-autopairs"
+
+    -- commenting 
+    use "numToStr/Comment.nvim"
+    use "JoosepAlviste/nvim-ts-context-commentstring"
+
+    -- git
+    use "lewis6991/gitsigns.nvim"
+
+    -- Neorg
     use {
         "nvim-neorg/neorg",
         config = function()
