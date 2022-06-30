@@ -60,6 +60,7 @@ export PATH=/opt/cuda/bin:$PATH
 export EDITOR="nvim"
 export BROWSER="brave"
 export HOSTBAME="yak"
+export STARSHIP_CONFIG=~/.config/starship.toml
 
 
 # User Controlls
@@ -83,8 +84,11 @@ source ~/Downloads/zshPlugins/colored-man-pages.plugin.zsh
 
 
 
-powerline-daemon -q
-. /usr/share/powerline/bindings/zsh/powerline.zsh
+# powerline-daemon -q
+# . /usr/share/powerline/bindings/zsh/powerline.zsh
+# source /usr/lib/spaceship-prompt/spaceship.zsh-theme
+eval "$(starship init zsh)"
+
 
 #Pfetch stuff
 export PF_COL1=0
@@ -105,3 +109,17 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /usr/share/fzf/key-bindings.zsh
+
+# SPACESHIP_PROMPT_ORDER=(
+#     user
+#     dir
+#     git
+#     package
+#     venv
+#     char
+# )
+# SPACESHIP_USER_SHOW=always 
+# SPACESHIP_USER_COLOR=#687f58
+# SPACESHIP_DIR_COLOR=#b9741d
+# SPACESHIP_DIR_TRUNC=5
+# SPACESHIP_GIT_STATUS_COLOR=#af0000

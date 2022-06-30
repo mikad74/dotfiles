@@ -1,0 +1,24 @@
+add_newline = false
+
+[line_break]
+disabled = true
+
+[character]
+format = "$symbol "
+success_symbol = "[->](fg:#3e4837)"
+error_symbol = "[->](fg:#af0000)"
+
+[directory]
+format = "[$path/]( #b9741d)[$read_only]($read_only_style) "
+
+[hostname]
+ssh_only = false
+format = "[$hostname](#b6940f)[\\]](#687f58) "
+
+[username]
+show_always = true
+style_user = "fg:#687f58"
+format = "[\\[$user]($style)[@](#af0000)"
+
+[cmd_duration]
+disabled = true

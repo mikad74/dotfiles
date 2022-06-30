@@ -25,7 +25,7 @@ function M.setup(config)
         Label = { bg = c.yak11 },
         Operator = { fg = c.yak6 },
         Keyword = { fg = c.yak10, style = config.keyword_style },
-        Exception = { bg = c.yak11 },
+        Exception = { fg = c.yak6 },
         PreProc =  { fg = c.yak9 },
         Include = { fg = c.yak11 },
         Define = { fg = c.yak5 },
@@ -43,7 +43,7 @@ function M.setup(config)
         Todo = { fg = c.yak1, bg = c.yak4 },
         CursorLineNr = { bg = c.yak11 },
         debugPc = { bg = c.yak11 },
-        Conceal = { bg = c.yak11 },
+        Conceal = { bg = c.yak0, fg = c.yak0 },
         Directory = { fg = c.yak10 },
 
         TabLine = { fg = c.yak3, bg = c.yak0 },
