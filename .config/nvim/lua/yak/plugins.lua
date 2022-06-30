@@ -92,6 +92,9 @@ return packer.startup(function(use)
     -- Toggleterm
     use "akinsho/toggleterm.nvim"
 
+    -- lualine
+    use "nvim-lualine/lualine.nvim"
+
     -- Neorg
     use {
         "nvim-neorg/neorg",
