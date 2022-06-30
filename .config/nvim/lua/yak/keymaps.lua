@@ -18,8 +18,8 @@ k("n", "<C-j>", "<C-w>j", opts)
 k("n", "<C-k>", "<C-w>k", opts)
 k("n", "<C-l>", "<C-w>l", opts)
 
--- Lexplore
-k("n", "<C-t>", ":Lexplore<CR>", opts)
+-- Nvim-tree
+k("n", "<C-t>", ":NvimTreeToggle<CR>", opts)
 
 -- Quick exit
 k("n", "<C-q>", ":q<CR>", opts)
@@ -35,6 +35,17 @@ k("v", ">", ">gv", opts)
 -- Telescope 
 k("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
 k("n", "<leader>d", "<cmd>Telescope live_grep<CR>", opts)
+k("n", "<leader>b", "<cmd>Telescope buffers<CR>", opts)
 
 -- Colorscheme management
 k("n", "<leader>z", "<cmd>TSHighlightCapturesUnderCursor<CR>", opts)
+k("n", "<leader>x", "<cmd>:echo synIDattr(synID(line('.'), col('.'),1), 'name')<CR>", opts)
+
+local status_ok, _ = pcall(require, "gitsigns")
+if not status_ok then
+    return
+end
+
+k("n", "c[", "<cmd>:Gitsigns prev_hunk<CR>", opts)
+k("n", "c]", "<cmd>:Gitsigns next_hunk<CR>", opts)
+k("n", "<leader>hp", "<cmd>:Gitsigns preview_hunk<CR>", opts)

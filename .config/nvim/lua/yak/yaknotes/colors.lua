@@ -8,6 +8,7 @@
      yak3 = "#200e09",
      yak4 = "#928374",
      yak5 = "#7c6f64",
+     yakHL = "#edd0a8",
 
      -- Colors
      yak6 = "#af0000",
@@ -23,7 +24,7 @@
 
 palette.diff = {
      add = "#687f58",
-     change = "#b6940f",
+     change = "#43b1b1",
      delete = "#af0000",
      text = "#f6f3d0",
  }

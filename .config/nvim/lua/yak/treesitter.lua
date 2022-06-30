@@ -8,8 +8,8 @@ configs.setup {
     sync_install = false,
     ignore_install = { "phpdoc" },
     highlight = {
-        enable = false,
-        disable = { "" },
+        enable = true,
+        disable = {},
         additional_vim_regex_highlighting = true,
     },
     indent = { enable = true, disable = { "" } },
@@ -24,6 +24,10 @@ configs.setup {
     playground = {
         enable = true,
     },
+    context_commentstring = {
+        enable = true,
+        enable_autocmd = false,
+    }
 }
 
 

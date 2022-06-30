@@ -1,5 +1,4 @@
-
-default = "yaknotes"
+local default = "yaknotes"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. default)
 

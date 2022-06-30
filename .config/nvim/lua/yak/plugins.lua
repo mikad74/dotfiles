@@ -78,12 +78,19 @@ return packer.startup(function(use)
     -- autopairs
     use "windwp/nvim-autopairs"
 
-    -- commenting 
+    -- commenting
     use "numToStr/Comment.nvim"
     use "JoosepAlviste/nvim-ts-context-commentstring"
 
     -- git
     use "lewis6991/gitsigns.nvim"
+
+    -- Nvim-tree
+    use "kyazdani42/nvim-web-devicons"
+    use "kyazdani42/nvim-tree.lua"
+
+    -- Toggleterm
+    use "akinsho/toggleterm.nvim"
 
     -- Neorg
     use {

@@ -44,7 +44,7 @@ function M.setup(config)
         CursorLineNr = { bg = c.yak11 },
         debugPc = { bg = c.yak11 },
         Conceal = { bg = c.yak11 },
-        Directory = { bg = c.yak11 },
+        Directory = { fg = c.yak10 },
 
         TabLine = { fg = c.yak3, bg = c.yak0 },
         TabLineFill = { bg = c.yak2 },
@@ -54,6 +54,16 @@ function M.setup(config)
         DiffChange = { bg = c.diff.change },
         DiffDelete = { bg = c.diff.delete },
         DiffText = { bg = c.diff.text },
+
+        GitsignsDiffAdd = { fg = c.diff.add },
+        GitsignsDiffChange = { fg = c.diff.change },
+        GitsignsDiffDelete = { fg = c.diff.delete },
+        GitsignsDiffText = { fg = c.diff.text },
+
+        DiagnosticError = { fg = c.yak6 },
+        DiagnosticWarn = { fg = c.yak10 },
+        DiagnosticHint = { fg = c.yak8 },
+        DiagnosticInfo = { fg = c.yak2 },
 
         ErrorMsg = { fg = c.yak1, bg = c.yak6 },
         VertSplit = { fg = c.yak2 },
@@ -66,7 +76,7 @@ function M.setup(config)
         PmenuSel = { fg = c.yak1, bg = c.yak11 },
         Question = { fg = c.yak11, bg = c.yak0 },
         QuickFixLine = { bg = c.yak8 },
-        Search = { bg = c.yak2 },
+        Search = { bg = c.yakHL },
         SpecialKey = { bg = c.yak8 },
         SpellBad = { bg = c.yak6 },
         SpellCap = { bg = c.yak6 },
@@ -84,7 +94,7 @@ function M.setup(config)
         ColorColumn = { bg = c.yak10 },
         SignColumn = { bg = c.yak0 },
         CursorColumn = { bg = c.yak10 },
-        CursorLine = { bg = c.yak10 },
+        CursorLine = { bg = c.yak2 },
         FoldColumn = { bg = c.yak10 },
         PmenuSbar = { bg = c.yak1 }, 
         PmenuThumb = { bg = c.yak11 },
@@ -129,14 +139,18 @@ function M.setup(config)
         TSStrong = { bg = c.yak9 },
         TSEmphasis = { bg = c.yak9 },
         TSUnderline = { bg = c.yak9 },
-        TSTitle = { bg = c.yak9 },
-        TSLiteral = { bg = c.yak9 },
+        TSTitle = { fg = c.yak11, bg = c.yak0 },
+        TSLiteral = { fg = c.yak10, bg = c.yak0 },
         TSURI = { bg = c.yak9 },
         TSTag = { bg = c.yak9 },
         TSTagDelimiter = { bg = c.yak9 },
         TSInclude = { fg = c.yak7, bg = c.yak0 },
         TSConstMacro = { fg = c.yak7, bg = c.yak0 },
         TSKeywordReturn = { fg = c.yak10, bg = c.yak0 },
+
+        LspReferenceText = { bg = c.yakHL },
+        LspReferenceRead = { bg = c.yakHL },
+        LspReferenceWrite = { bg = c.yakHL },
     }
 
     theme.base = vim.tbl_extend("force", theme.base, config.highlights or {})
