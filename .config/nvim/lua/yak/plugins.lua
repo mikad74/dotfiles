@@ -52,6 +52,7 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-cmdline"
     use "saadparwaiz1/cmp_luasnip"
     use "hrsh7th/cmp-nvim-lsp"
+    use "rafamadriz/friendly-snippets"
 
     -- snipets
     use "L3MON4D3/LuaSnip"
@@ -59,6 +60,9 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
+
+    -- Null ls
+    use "jose-elias-alvarez/null-ls.nvim"
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"

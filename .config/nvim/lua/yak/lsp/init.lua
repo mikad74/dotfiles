@@ -5,3 +5,4 @@ end
 
 require "yak.lsp.configs"
 require("yak.lsp.handlers").setup()
+require "yak.lsp.null-ls"

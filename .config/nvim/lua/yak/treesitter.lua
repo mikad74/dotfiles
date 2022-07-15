@@ -9,10 +9,10 @@ configs.setup {
     ignore_install = { "phpdoc" },
     highlight = {
         enable = true,
-        disable = {},
+        disable = { "html" },
         additional_vim_regex_highlighting = true,
     },
-    indent = { enable = true, disable = { "" } },
+    indent = { enable = true, disable = { "html" } },
     rainbow = {
         enable = true,
 

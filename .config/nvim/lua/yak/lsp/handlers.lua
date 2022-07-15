@@ -72,7 +72,7 @@ local function lsp_keymaps(bufnr)
     end, opts)
 
     -- vim.keymap.set('n', '<leader>rr', vim.lsp.buf.rename, opts)
-    vim.keymap.set('n', '<leader>ll', vim.lsp.buf.formatting, opts)
+    vim.keymap.set('n', '<leader>ll', "<cmd>lua vim.lsp.buf.formatting_sync()<CR>", opts)
 
     vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "[d", "<cmd>lua vim.diagnostic.goto_prev({ border = 'rounded' })<CR>", opts)
@@ -83,6 +83,9 @@ end
 
 function _M.on_attach(client, bufnr)
     if client.name == "tsserver" then
+        client.resolved_capabilities.document_formatting = false
+    end
+    if client.name == "html" then
         client.resolved_capabilities.document_formatting = false
     end
 

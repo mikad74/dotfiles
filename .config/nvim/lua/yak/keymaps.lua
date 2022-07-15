@@ -19,7 +19,7 @@ k("n", "<C-k>", "<C-w>k", opts)
 k("n", "<C-l>", "<C-w>l", opts)
 
 -- Nvim-tree
-k("n", "<C-t>", ":NvimTreeToggle<CR>", opts)
+k("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 
 -- Quick exit
 k("n", "<C-q>", ":q<CR>", opts)
@@ -49,3 +49,6 @@ end
 k("n", "c[", "<cmd>:Gitsigns prev_hunk<CR>", opts)
 k("n", "c]", "<cmd>:Gitsigns next_hunk<CR>", opts)
 k("n", "<leader>hp", "<cmd>:Gitsigns preview_hunk<CR>", opts)
+
+-- HTML development
+k("n", "<leader>\\", "<cmd>:exe 'silent !firefox %'<CR>", opts)
