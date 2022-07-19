@@ -17,6 +17,9 @@ k("n", "<C-h>", "<C-w>h", opts)
 k("n", "<C-j>", "<C-w>j", opts)
 k("n", "<C-k>", "<C-w>k", opts)
 k("n", "<C-l>", "<C-w>l", opts)
+k("n", "<C-=>", "<cmd>:vertical resize +5<cr>", opts)
+k("n", "<C-->", "<cmd>:vertical resize -5<cr>", opts)
+
 
 -- Nvim-tree
 k("n", "<C-n>", ":NvimTreeToggle<CR>", opts)

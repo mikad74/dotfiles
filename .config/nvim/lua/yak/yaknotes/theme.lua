@@ -127,7 +127,7 @@ function M.setup(config)
         TSKeywordFunction = { fg = c.yak10, bg = c.yak0 },
         TSKeywordOperator = { fg = c.yak6, bg = c.yak0 },
         TSOperator = { fg = c.yak12, bg = c.yak0 },
-        TSException = { bg = c.yak9 },
+        TSException = { fg = c.yak12 },
         TSType = { fg = c.yak9, bg = c.yak0 },
         TSTypeBuiltin = { bg = c.yak9 },
         TSStructure = { bg = c.yak9 },
@@ -152,6 +152,11 @@ function M.setup(config)
 
         htmlComment = { fg = c.yak4},
         htmlLink = { fg = c.yak6, gui="underlined" },
+
+        -- Dapui colors 
+        DapUIScope = { fg = c.yak10 },
+        DapUIType = { fg = c.yak7 },
+        DapUIDecoration = { fg = c.yak10 },
     }
 
     theme.base = vim.tbl_extend("force", theme.base, config.highlights or {})

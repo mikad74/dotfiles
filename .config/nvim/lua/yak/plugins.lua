@@ -109,6 +109,13 @@ return packer.startup(function(use)
         requires = "nvim-lua/plenary.nvim"
     }
 
+    -- Dap
+    use "mfussenegger/nvim-dap"
+    use "mfussenegger/nvim-dap-python"
+    use "rcarriga/nvim-dap-ui"
+    use "Pocco81/DAPInstall.nvim"
+
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end

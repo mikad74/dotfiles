@@ -88,6 +88,9 @@ function _M.on_attach(client, bufnr)
     if client.name == "html" then
         client.resolved_capabilities.document_formatting = false
     end
+    if client.name == "sumneko_lua" then
+        client.resolved_capabilities.document_formatting = false
+    end
 
     lsp_keymaps(bufnr)
     lsp_highlight_document(client)
