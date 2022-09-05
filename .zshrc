@@ -46,6 +46,7 @@ alias gss="git status"
 alias gps="git push"
 alias gpl="git pull"
 alias gcl="git clone"
+alias gss="git status"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 #SSH to yak 
