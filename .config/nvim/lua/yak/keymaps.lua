@@ -28,8 +28,8 @@ k("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 k("n", "<C-q>", ":q<CR>", opts)
 
 -- Tab movement
-k("n", "<S-k>", ":tabn<CR>", opts)
-k("n", "<S-j>", ":tabp<CR>", opts)
+k("n", "<M-k>", ":tabn<CR>", opts)
+k("n", "<M-j>", ":tabp<CR>", opts)
 
 -- Visual --
 k("v", "<", "<gv", opts)
