@@ -42,6 +42,7 @@ alias dse="cd ~/Downloads/git/github/AE3200DSE"
 #Git aliases
 alias ga="git add"
 alias gc="git commit -m"
+alias gss="git status"
 alias gps="git push"
 alias gpl="git pull"
 alias gcl="git clone"
@@ -123,3 +124,7 @@ source /usr/share/fzf/key-bindings.zsh
 # SPACESHIP_DIR_COLOR=#b9741d
 # SPACESHIP_DIR_TRUNC=5
 # SPACESHIP_GIT_STATUS_COLOR=#af0000
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
