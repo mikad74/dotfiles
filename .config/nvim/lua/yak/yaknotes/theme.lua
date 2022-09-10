@@ -134,8 +134,8 @@ function M.setup(config)
         TSVariable = { fg = c.yak3, bg = c.yak0 },
         TSVariableBuiltin = { fg = c.yak3 },
         TSText = { fg = c.yak3 },
-        TSStrong = { fg = c.yak9 },
-        TSEmphasis = { fg = c.yak12 },
+        TSStrong = { fg = c.yak3, style ="bold" },
+        TSEmphasis = { fg = c.yak3, style="italic" },
         TSUnderline = { bg = c.yak9 },
         TSTitle = { fg = c.yak11, bg = c.yak0 },
         TSLiteral = { fg = c.yak10, bg = c.yak0 },
@@ -145,6 +145,7 @@ function M.setup(config)
         TSInclude = { fg = c.yak7, bg = c.yak0 },
         TSConstMacro = { fg = c.yak7, bg = c.yak0 },
         TSKeywordReturn = { fg = c.yak10, bg = c.yak0 },
+        TSMath = { fg = c.yak6 },
 
         LspReferenceText = { bg = c.yakHL },
         LspReferenceRead = { bg = c.yakHL },
@@ -152,6 +153,7 @@ function M.setup(config)
 
         htmlComment = { fg = c.yak4},
         htmlLink = { fg = c.yak6, gui="underlined" },
+
 
         -- Dapui colors 
         DapUIScope = { fg = c.yak10 },

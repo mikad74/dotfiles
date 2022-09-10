@@ -55,3 +55,7 @@ k("n", "<leader>hp", "<cmd>:Gitsigns preview_hunk<CR>", opts)
 
 -- HTML development
 k("n", "<leader>\\", "<cmd>:exe 'silent !firefox %'<CR>", opts)
+
+-- Neorg
+k("n", "<leader>nn", "<cmd>:NeorgStart<CR>", opts)
+k("n", "<leader>nw", ":Neorg workspace", opts)
