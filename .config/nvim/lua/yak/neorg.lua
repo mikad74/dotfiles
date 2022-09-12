@@ -10,10 +10,10 @@ neorg.setup({
             config = {
                 workspaces = {
                     example_gtd = "~/Notes/test/example_workspaces/gtd",
-                    mika = "~/Notes/mika",
-                    school = "~/Notes/school",
-                    work = "~/Notes/work",
-                    dev = "~/Notes/dev"
+                    mika = "~/Notes/neorg/mika",
+                    school = "~/Notes/neorg/school",
+                    work = "~/Notes/neorg/work",
+                    dev = "~/Notes/neorg/dev"
                 },
                 autochdir = true,
                 index = "index.norg",
