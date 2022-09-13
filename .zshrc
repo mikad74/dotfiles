@@ -37,6 +37,7 @@ alias dict="sdcv"
 alias py="python"
 alias bn="brightnessctl s" 
 alias dse="cd ~/Downloads/git/github/AE3200DSE"
+alias sy="sioyek"
 
 
 #Git aliases
