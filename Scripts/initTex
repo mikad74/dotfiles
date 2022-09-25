@@ -1,0 +1,9 @@
+#!/bin/bash
+template_dir="/home/mika/Documents/latexProjects/templates/homework"
+if [ $1 ]; then
+  echo $1
+  echo $template_dir
+  cp -r "$template_dir" "$1"
+else
+  echo "no directory name specified"
+fi

@@ -10,7 +10,9 @@ end
 
 local lspconfig = require("lspconfig")
 
-local servers = { "jsonls", "sumneko_lua" , "pyright", "rust_analyzer", "taplo", "emmet_ls", "cssls", "tsserver", "texlab"}
+local servers = { "jsonls", "sumneko_lua", "pyright", "rust_analyzer", "taplo", "emmet_ls", "cssls", "tsserver", "texlab",
+    "bashls" }
+
 
 mason.setup({
     ui = {
