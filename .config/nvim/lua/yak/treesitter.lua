@@ -19,7 +19,7 @@ configs.setup {
         -- disable = { "" }
         extended_mode = true,
         max_file_lines = nil,
-        colors = { "#b9741d", "#687f58", "#976191", "#ff0000", "#43b1b1" },
+        colors = { "#b9741d", "#687f58", "#976191", "#af0000", "#43b1b1" },
     },
     playground = {
         enable = true,

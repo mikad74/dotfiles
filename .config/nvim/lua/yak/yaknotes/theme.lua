@@ -145,7 +145,9 @@ function M.setup(config)
         TSInclude = { fg = c.yak7, bg = c.yak0 },
         TSConstMacro = { fg = c.yak7, bg = c.yak0 },
         TSKeywordReturn = { fg = c.yak10, bg = c.yak0 },
-        TSMath = { fg = c.yak6 },
+        TSMath = { fg = c.yak6, bg = c.yak0 },
+        TSEnvironment = {fg = c.yak7, bg = c.yak0},
+        TSSpell = { bg = c.yak6 },
 
         LspReferenceText = { bg = c.yakHL },
         LspReferenceRead = { bg = c.yakHL },
@@ -154,6 +156,8 @@ function M.setup(config)
         htmlComment = { fg = c.yak4},
         htmlLink = { fg = c.yak6, gui="underlined" },
 
+        TexBeginEnd = { fg = c.yak8, bg = c.yak10},
+        TexDocZone = {},
 
         -- Dapui colors 
         DapUIScope = { fg = c.yak10 },

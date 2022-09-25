@@ -1,1 +1,1 @@
-vim.cmd [[autocmd BufWritePost * execute ':terminal git add % && git commit -m %']]
+-- vim.cmd [[autocmd BufWritePost * execute ':terminal git add % && git commit -m %']]
