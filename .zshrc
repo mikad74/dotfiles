@@ -61,8 +61,9 @@ export PATH=$HOME/Scripts:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=/opt/cuda/include:$PATH
 export PATH=/opt/cuda/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export EDITOR="nvim"
-export BROWSER="brave"
+export BROWSER="firefox"
 export HOSTBAME="yak"
 export STARSHIP_CONFIG=~/.config/starship.toml
 
