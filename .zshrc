@@ -38,7 +38,7 @@ alias py="python"
 alias bn="brightnessctl s" 
 alias dse="cd ~/Downloads/git/github/AE3200DSE"
 alias sy="sioyek"
-alias ltex="latexmk -pdf -pvc -jobname=build/out main.tex"
+alias ltex="latexmk -pdf -pvc -jobname=build/out --shell-escape main.tex"
 
 
 #Git aliases
