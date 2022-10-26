@@ -1,1 +1,1 @@
-$pdf_previewer = 'start sioyek'
+$pdf_previewer = 'start zathura'
