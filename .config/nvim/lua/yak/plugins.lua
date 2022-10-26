@@ -77,6 +77,7 @@ return packer.startup(function(use)
     }
     use "p00f/nvim-ts-rainbow"
     use "nvim-treesitter/playground"
+    use "nvim-treesitter/nvim-treesitter-context"
 
     -- colorizer
     use "norcalli/nvim-colorizer.lua"

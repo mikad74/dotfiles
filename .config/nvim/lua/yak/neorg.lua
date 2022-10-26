@@ -22,7 +22,7 @@ neorg.setup({
         },
         ["core.gtd.base"] = {
             config = {
-                workspace = "example_gtd",
+                workspace = "mika"
             },
         },
         ["core.norg.completion"] = {

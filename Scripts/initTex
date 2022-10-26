@@ -4,6 +4,8 @@ if [ $1 ]; then
   echo $1
   echo $template_dir
   cp -r "$template_dir" "$1"
+  cd "$1"
+  mkdir "build"
 else
   echo "no directory name specified"
 fi

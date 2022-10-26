@@ -36,6 +36,7 @@ o.foldmethod = "indent"
 vim.api.nvim_command("set nofoldenable")
 o.guifont = "Fira Code Medium Nerd Font Complete"
 
+vim.api.nvim_command("setlocal spell spelllang=en_us")
 
 o. shortmess:append "c"
 
