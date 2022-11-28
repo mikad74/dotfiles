@@ -12,7 +12,7 @@ configs.setup {
         disable = { "html" },
         additional_vim_regex_highlighting = true,
     },
-    indent = { enable = true, disable = { "html" } },
+    indent = { enable = true, disable = { "html", "tex" } },
     rainbow = {
         enable = true,
 

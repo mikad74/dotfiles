@@ -22,7 +22,7 @@ function M.setup(config)
 		Statement = { fg = c.yak10 },
 		Conditional = { fg = c.yak6 },
 		Repeat = { bg = c.yak11 },
-		Label = { bg = c.yak11 },
+		Label = { bg = c.yak0 },
 		Operator = { fg = c.yak6 },
 		Keyword = { fg = c.yak10, style = config.keyword_style },
 		Exception = { fg = c.yak6 },
