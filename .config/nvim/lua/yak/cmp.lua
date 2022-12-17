@@ -67,12 +67,22 @@ cmp.setup({
 		["<Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
-			elseif luasnip.expandable() then
-				luasnip.expand()
-			elseif luasnip.expand_or_jumpable() then
-				luasnip.expand_or_jump()
+			-- elseif luasnip.expandable() then
+			-- 	luasnip.expand()
+			-- elseif luasnip.expand_or_jumpable() then
+			-- 	luasnip.expand_or_jump()
 			elseif check_backspace() then
 				fallback()
+			else
+				fallback()
+			end
+		end, {
+			"i",
+			"s",
+		}),
+		["<M-Tab>"] = cmp.mapping(function(fallback)
+			if luasnip.expand_or_jumpable() then
+				luasnip.expand_or_jump()
 			else
 				fallback()
 			end
@@ -102,9 +112,9 @@ cmp.setup({
 			-- vim_item.kind)
 			-- This concatonates the icons with the name of the item kind
 			vim_item.menu = ({
+				luasnip = "[Snippet]",
 				nvim_lsp = "[LSP]",
 				nvim_lua = "[NVIM_LUA]",
-				luasnip = "[Snippet]",
 				buffer = "[Buffer]",
 				path = "[Path]",
 			})[entry.source.name]
@@ -112,10 +122,10 @@ cmp.setup({
 		end,
 	},
 	sources = {
+		{ name = "luasnip" },
 		{ name = "nvim_lsp" },
 		{ name = "neorg" },
 		{ name = "nvim_lua" },
-		{ name = "luasnip" },
 		{ name = "buffer" },
 		{ name = "path" },
 	},

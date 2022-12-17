@@ -33,7 +33,7 @@ function M.setup(config)
 		Macro = { bg = c.yak0 },
 		PreConduit = { bg = c.yak11 },
 		Type = {},
-		StorageClass = { bg = c.yak11 },
+		StorageClass = { fg  = c.yak12 },
 		Structure = {},
 		Typedef = { bg = c.yak11 },
 		Special = { fg = c.yak10 },
